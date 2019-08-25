@@ -14,20 +14,20 @@ enum ApiUrls {
 
 enum ErrorMessages {
     static let errorTitle = "Error"
-    static let genericErrorMessage = "An error ocurred, please try agian later"
-    static let dismissMessage = "Dismiss"
-    static let noImage = "No image taken"
+    static let genericErrorMessage = "Ocurrio un error, por favor intenta de nuevo"
+    static let dismissMessage = "Entendido"
+    static let noImage = "No hay imagenes tomadas"
 }
 
 enum SelfieAlert {
     static let title = "Selfie"
-    static let message = "Take a selfie or check your past selfie"
-    static let cancel = "Cancel"
-    static let takeSelfieButton = "Take"
-    static let checkSelfieButton = "Check"
+    static let message = "Tomate un selfie o revisa la que ya tienes"
+    static let cancel = "Cancelar"
+    static let takeSelfieButton = "Tomar Selfie"
+    static let checkSelfieButton = "Revisar"
     static let ok = "Ok"
-    static let image = "Image"
-    static let checkSelfie = "Check selfie"
+    static let image = "Imagen"
+    static let checkSelfie = "Ver selfie"
 }
 
 enum TableCellIdentifiers {
