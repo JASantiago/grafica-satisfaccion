@@ -35,8 +35,8 @@ class PieChartTableViewCell: UITableViewCell {
     }
     
     func loadData() {
+        charDataEntries = []
         for data in question?.chartData ?? [] {
-            print(data)
             charDataEntries.append(PieChartDataEntry(value: Double(data.percetnage), label: data.text))
         }
 
@@ -48,7 +48,7 @@ class PieChartTableViewCell: UITableViewCell {
     
     func loadColors() {
         for color in colors {
-            castedColors.append(UIColor(hexString: color) ?? UIColor.red)
+            castedColors.append(UIColor(hexString: color))
         }
         
         let chartDataSet = PieChartDataSet(entries: charDataEntries, label: nil)

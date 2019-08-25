@@ -18,6 +18,9 @@
 		6F1BBF1B2312CE0D003601E0 /* ErrorAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BBF1A2312CE0D003601E0 /* ErrorAlertPresenter.swift */; };
 		6F1BBF1D2312CF25003601E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BBF1C2312CF25003601E0 /* Constants.swift */; };
 		6F1BBF212312DE98003601E0 /* PieChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BBF202312DE98003601E0 /* PieChartTableViewCell.swift */; };
+		6F1BBF252313079C003601E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F1BBF242313079C003601E0 /* GoogleService-Info.plist */; };
+		6F1BBF27231309B0003601E0 /* BackgroundColorChangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BBF26231309B0003601E0 /* BackgroundColorChangeService.swift */; };
+		6F1BBF2923130B69003601E0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BBF2823130B69003601E0 /* Color.swift */; };
 		9051861E5D30FAE5B494900E /* Pods_grafica_satisfaccion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7017BA8FA98FBD30F3959C /* Pods_grafica_satisfaccion.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		6F1BBF1A2312CE0D003601E0 /* ErrorAlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorAlertPresenter.swift; sourceTree = "<group>"; };
 		6F1BBF1C2312CF25003601E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6F1BBF202312DE98003601E0 /* PieChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartTableViewCell.swift; sourceTree = "<group>"; };
+		6F1BBF242313079C003601E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6F1BBF26231309B0003601E0 /* BackgroundColorChangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorChangeService.swift; sourceTree = "<group>"; };
+		6F1BBF2823130B69003601E0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8284C24220DC4B6209E8EB20 /* Pods-grafica-satisfaccion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grafica-satisfaccion.release.xcconfig"; path = "Pods/Target Support Files/Pods-grafica-satisfaccion/Pods-grafica-satisfaccion.release.xcconfig"; sourceTree = "<group>"; };
 		847BF4F630FE5C651504BE69 /* Pods-grafica-satisfaccion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grafica-satisfaccion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-grafica-satisfaccion/Pods-grafica-satisfaccion.debug.xcconfig"; sourceTree = "<group>"; };
 		9D7017BA8FA98FBD30F3959C /* Pods_grafica_satisfaccion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grafica_satisfaccion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,7 @@
 				6F1BBEFF2312BF4E003601E0 /* Main.storyboard */,
 				6F1BBF022312BF4F003601E0 /* Assets.xcassets */,
 				6F1BBF042312BF4F003601E0 /* LaunchScreen.storyboard */,
+				6F1BBF242313079C003601E0 /* GoogleService-Info.plist */,
 				6F1BBF072312BF4F003601E0 /* Info.plist */,
 			);
 			path = "grafica-satisfaccion";
@@ -91,6 +98,7 @@
 			children = (
 				6F1BBF132312C528003601E0 /* Question.swift */,
 				6F1BBF152312C648003601E0 /* ChartData.swift */,
+				6F1BBF2823130B69003601E0 /* Color.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 			children = (
 				6F1BBF1A2312CE0D003601E0 /* ErrorAlertPresenter.swift */,
 				6F1BBF1C2312CF25003601E0 /* Constants.swift */,
+				6F1BBF26231309B0003601E0 /* BackgroundColorChangeService.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -199,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1BBF062312BF4F003601E0 /* LaunchScreen.storyboard in Resources */,
+				6F1BBF252313079C003601E0 /* GoogleService-Info.plist in Resources */,
 				6F1BBF032312BF4F003601E0 /* Assets.xcassets in Resources */,
 				6F1BBF012312BF4E003601E0 /* Main.storyboard in Resources */,
 			);
@@ -239,12 +249,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-grafica-satisfaccion/Pods-grafica-satisfaccion-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -261,10 +277,12 @@
 				6F1BBEFC2312BF4E003601E0 /* AppDelegate.swift in Sources */,
 				6F1BBF212312DE98003601E0 /* PieChartTableViewCell.swift in Sources */,
 				6F1BBF162312C648003601E0 /* ChartData.swift in Sources */,
+				6F1BBF2923130B69003601E0 /* Color.swift in Sources */,
 				6F1BBF1B2312CE0D003601E0 /* ErrorAlertPresenter.swift in Sources */,
 				6F1BBF142312C528003601E0 /* Question.swift in Sources */,
 				6F1BBF102312C403003601E0 /* MainViewController.swift in Sources */,
 				6F1BBF122312C41E003601E0 /* ChartViewController.swift in Sources */,
+				6F1BBF27231309B0003601E0 /* BackgroundColorChangeService.swift in Sources */,
 				6F1BBF1D2312CF25003601E0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
