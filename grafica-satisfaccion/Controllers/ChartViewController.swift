@@ -41,7 +41,7 @@ class ChartViewController: UITableViewController {
                 let apiData = try JSONDecoder().decode(ApiResponse.self, from: datum)
                 self.colors = apiData.colors
                 self.questions = apiData.questions
-            } catch let error {
+            } catch {
                 ErrorPresenter.showError(message: ErrorMessages.genericErrorMessage, on: self)
             }
         }.resume()
@@ -53,7 +53,6 @@ class ChartViewController: UITableViewController {
 
 extension ChartViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(questions.count)
         return questions.count
     }
     

@@ -7,4 +7,6 @@ target 'grafica-satisfaccion' do
 
   # Pods for grafica-satisfaccion
 	pod 'Charts', '~> 3.3'
+	pod 'Firebase/Database'
+
 end

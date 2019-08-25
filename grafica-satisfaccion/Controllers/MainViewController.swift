@@ -47,6 +47,8 @@ extension MainViewController {
                 self.present(self.imagePicker, animated: true, completion: nil)
             }
             
+            // Adds View of the Taken Picture
+            
             let checkPictureAction = UIAlertAction(title: SelfieAlert.checkSelfieButton, style: .default) { _ in
                 if self.imageTaken != nil {
                     alert.dismiss(animated: true, completion: nil)
