@@ -58,7 +58,7 @@ extension ChartViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PieChartCell", for: indexPath) as! PieChartTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableCellIdentifiers.pieChart, for: indexPath) as! PieChartTableViewCell
         cell.question = questions[indexPath.row]
         cell.colors = colors
         return cell
