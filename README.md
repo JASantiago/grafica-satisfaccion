@@ -32,3 +32,5 @@ llegara a 0, al no liberarse ese espacio de memoria, estamos perdiendo disponibl
 
 a los padres de nuestro querido Batman los mato Joe Chill saliendo del teatro, aunque por un momento, en la pelicula de
 TeenTitans Go, estos fueron salvados (Hurra!)
+
+El color del background sera amarillo, ya que didFinishedLauching es llamado luego de que las vistas estan listas para mostrarse
