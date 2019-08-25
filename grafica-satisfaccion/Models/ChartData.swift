@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ChartData {
+struct ChartData: Decodable {
     var text: String
     var percetnage: Int
 }

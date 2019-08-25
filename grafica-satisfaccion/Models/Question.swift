@@ -8,8 +8,13 @@
 
 import Foundation
 
-struct Question {
+struct ApiResponse: Decodable {
+    var colors: [String]
+    var questions: [Question]
+}
+
+struct Question: Decodable {
     var total: Int
     var text: String
-    var charData: [ChartData]
+    var chartData: [ChartData]
 }
