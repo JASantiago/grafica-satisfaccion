@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChartViewController.swift
 //  grafica-satisfaccion
 //
 //  Created by  Jose  Santiago on 8/25/19.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
